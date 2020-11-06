@@ -4,6 +4,9 @@ version = "1.0.0"
 description = "Package collecting all common dev dependencies of inmanta modules and extensions to synchronize dependency versions."
 authors = ["Inmanta <code@inmanta.com>"]
 license = "Apache-2.0"
+packages = [
+    { include = "inmanta_dev_dependencies", from = "src" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.6"
