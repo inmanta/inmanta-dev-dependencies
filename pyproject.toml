@@ -1,14 +1,36 @@
 [tool.poetry]
 name = "inmanta-dev-dependencies"
 version = "1.0.0"
-description = ""
+description = "Package collecting all common dev dependencies of inmanta modules and extensions to synchronize dependency versions."
 authors = ["Inmanta <code@inmanta.com>"]
+license = "Apache-2.0"
 
 [tool.poetry.dependencies]
 python = "^3.6"
+black = "*"
+flake8 = "*"
+flake8-copyright = "*"
+flake8-black = "*"
+flake8-isort = "*"
+isort = "*"
+lxml = "*"
+mypy = "*"
+pytest = "*"
 
-[tool.poetry.dev-dependencies]
-pytest = "^5.2"
+# Optional dependencies
+pytest-asyncio = { version = "*", optional = true }
+pytest-inmanta = { version = "*", optional = true }
+pytest-inmanta-extensions = { version = "*", optional = true }
+pytest-inmanta-lsm = { version = "*", optional = true }
+pytest-timeout = { version = "*", optional = true }
+tox = { version = "*", optional = true }
+tox-venv = { version = "*", optional = true }
+
+[tool.poetry.extras]
+async = ["pytest-asyncio", "pytest-timeout"]
+extension = ["tox", "tox-venv", "pytest-inmanta-extensions"]
+lsm = ["pytest-inmanta-extensions", "pytest-inmanta-lsm"]
+module = ["pytest-inmanta"]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
