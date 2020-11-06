@@ -1,0 +1,62 @@
+pipeline {
+    agent any
+
+    // TODO: set up weekly trigger
+
+    parameters {
+        booleanParam(
+            name: 'run_job',
+            defaultValue: false,
+            description: 'Triggering the build job with run_job == false doesn\'t run the actual job.',
+        )
+    }
+
+    environment {
+    }
+
+    options {
+        disableConcurrentBuilds()
+        checkoutToSubdirectory(env.REPO_NAME)
+        skipDefaultCheckout()
+    }
+
+    stages {
+        stage("Determine ") {
+            when {
+                expression { "${run_job}" == "true" }
+            }
+            steps {
+                deleteDir()
+                dir(env.REPO_NAME) {
+                    checkout scm
+                    script {
+                        status = sh(
+                            returnStatus: true,
+                            script: '''
+                                git checkout master
+                                diff=$(git diff origin/latest -- pyproject.toml)
+                                [ -z "$diff" ]
+                            '''
+                        )
+                        if (status) {
+                            env.HAS_CHANGES = true
+                        } else {
+                            env.HAS_CHANGES = false
+                        }
+                    }
+                }
+            }
+        }
+
+        stage("Build release job") {
+            when {
+                allOf {
+                    expression { "${run_job}" == "true" }
+                    expression { "${env.HAS_CHANGES}" == "true" }
+                }
+            }
+            steps {
+            }
+        }
+    }
+}
