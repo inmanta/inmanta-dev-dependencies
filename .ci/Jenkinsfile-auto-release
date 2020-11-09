@@ -1,7 +1,10 @@
 pipeline {
     agent any
 
-    // TODO: set up weekly trigger
+    triggers {
+        // release dependency updates each friday night so dependabot can update dependencies on this package over the weekend
+        cron(BRANCH_NAME == "master" ? "H H(18-23) * * 5": "")
+    }
 
     parameters {
         booleanParam(
@@ -21,7 +24,7 @@ pipeline {
     }
 
     stages {
-        stage("Determine ") {
+        stage("Check for changes") {
             when {
                 expression { "${run_job}" == "true" }
             }
@@ -56,6 +59,15 @@ pipeline {
                 }
             }
             steps {
+                build(
+                    job: "/releases/python-packages/inmanta-dev-dependencies-pypi-release/${env.BRANCH_NAME}",
+                    parameters: [
+                        string(name: "release_type", value: "stable"),
+                        string(name: "version_increment", value: "minor"),
+                        booleanParam(name: "run_job", value: true),
+                        booleanParam(name: "upload", value: true),
+                    ]
+                )
             }
         }
     }
