@@ -6,14 +6,6 @@ pipeline {
         cron(BRANCH_NAME == "master" ? "H H(18-23) * * 5": "")
     }
 
-    parameters {
-        booleanParam(
-            name: 'run_job',
-            defaultValue: false,
-            description: 'Triggering the build job with run_job == false doesn\'t run the actual job.',
-        )
-    }
-
     environment {
     }
 
@@ -25,9 +17,6 @@ pipeline {
 
     stages {
         stage("Check for changes") {
-            when {
-                expression { "${run_job}" == "true" }
-            }
             steps {
                 deleteDir()
                 dir(env.REPO_NAME) {
@@ -53,10 +42,7 @@ pipeline {
 
         stage("Build release job") {
             when {
-                allOf {
-                    expression { "${run_job}" == "true" }
-                    expression { "${env.HAS_CHANGES}" == "true" }
-                }
+                expression { "${env.HAS_CHANGES}" == "true" }
             }
             steps {
                 build(
