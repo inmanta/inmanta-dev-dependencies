@@ -8,7 +8,7 @@ pipeline {
 
     options {
         disableConcurrentBuilds()
-        checkoutToSubdirectory(env.REPO_NAME)
+        checkoutToSubdirectory("inmanta-dev-dependencies")
         skipDefaultCheckout()
     }
 
@@ -16,7 +16,7 @@ pipeline {
         stage("Check for changes") {
             steps {
                 deleteDir()
-                dir(env.REPO_NAME) {
+                dir("inmanta-dev-dependencies") {
                     checkout scm
                     script {
                         status = sh(
