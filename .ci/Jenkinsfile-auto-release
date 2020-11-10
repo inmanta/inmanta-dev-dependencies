@@ -42,11 +42,9 @@ pipeline {
 
         stage("Build release job") {
             when {
-                expression {
-                    allOf {
-                        expression { "${env.BRANCH_NAME}" == "master" }
-                        expression { "${env.HAS_CHANGES}" == "true" }
-                    }
+                allOf {
+                    expression { "${env.BRANCH_NAME}" == "master" }
+                    expression { "${env.HAS_CHANGES}" == "true" }
                 }
             }
             steps {
