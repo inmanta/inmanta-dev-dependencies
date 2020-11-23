@@ -1,4 +1,7 @@
-# v 1.2.0 (?)
+# v 1.3.0 (?)
+Changes in this release:
+
+# v 1.2.0 (2020-11-20)
 Changes in this release:
 
 # v 1.1.0 (2020-11-13)
