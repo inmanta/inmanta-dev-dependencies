@@ -33,10 +33,7 @@ pipeline {
         stage("Poetry install") {
             dir(env.REPO_NAME) {
                 script {
-                    sh '''
-                        poetry install --extras "async extension module"
-                        poetry lock
-                    '''
+                    sh 'poetry install --extras "async extension module"'
                 }
             }
         }
