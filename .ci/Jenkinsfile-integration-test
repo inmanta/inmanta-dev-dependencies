@@ -22,9 +22,11 @@ pipeline {
                 dir(env.REPO_NAME) {
                     checkout scm
                     script {
-                        rm -rf ${WORKSPACE}/env
-                        python3 -m venv ${WORKSPACE}/env
-                        ${WORKSPACE}/env/bin/python3 -m pip install -U pip poetry
+                        sh '''
+                            rm -rf ${WORKSPACE}/env
+                            python3 -m venv ${WORKSPACE}/env
+                            ${WORKSPACE}/env/bin/python3 -m pip install -U pip poetry
+                        '''
                     }
                 }
             }
