@@ -33,9 +33,11 @@ pipeline {
         }
 
         stage("Poetry install") {
-            dir(env.REPO_NAME) {
-                script {
-                    sh 'poetry install --extras "async extension module"'
+            steps {
+                dir(env.REPO_NAME) {
+                    script {
+                        sh 'poetry install --extras "async extension module"'
+                    }
                 }
             }
         }
