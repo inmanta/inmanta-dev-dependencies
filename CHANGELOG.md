@@ -1,4 +1,4 @@
-# v 1.5.0 (?)
+# v 1.5.0 (2020-12-15)
 Changes in this release:
 - auto release pipeline now automatically bumps the version instead of opening a pull request (#7)
 
