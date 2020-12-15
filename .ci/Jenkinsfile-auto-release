@@ -55,6 +55,7 @@ pipeline {
                         string(name: "version_increment", value: "minor"),
                         booleanParam(name: "run_job", value: true),
                         booleanParam(name: "upload", value: true),
+                        booleanParam(name: "auto_merge_version_bump", value: true),
                     ]
                 )
             }
