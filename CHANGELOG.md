@@ -1,3 +1,6 @@
+# v 1.8.0 (2021-01-01)
+Changes in this release:
+
 # v 1.7.0 (2020-12-25)
 Changes in this release:
 
