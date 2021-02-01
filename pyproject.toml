@@ -19,27 +19,27 @@ isort = "5.7.0"
 lxml = "4.6.2"
 mypy = "0.800"
 pytest = "6.2.2"
-pep8-naming = "^0.11.1"
+pep8-naming = "0.11.1"
 
 # Optional dependencies
-pytest-inmanta-extensions = {version = "^2020.5.1", extras = ["extension"]}
-asyncpg = {version = "^0.21.0", extras = ["extension"]}
-click = {version = "^7.1.2", extras = ["extension"]}
-pyformance = {version = "^0.4", extras = ["extension"]}
-pytest-env = {version = "^0.6.2", extras = ["extension", "pytest"]}
-pytest-postgresql = {version = "^2.5.3", extras = ["extension"]}
-psycopg2 = {version = "^2.8.6", extras = ["extension"]}
-tornado = {version = "^6.1", extras = ["extension"]}
-pytest-inmanta = {version = "^1.4.0", extras = ["module"]}
-tox = {version = "^3.21.3", extras = ["module"]}
-tox-venv = {version = "^0.4.0", extras = ["module"]}
-pytest-asyncio = {version = "^0.14.0", extras = ["async"]}
-pytest-timeout = {version = "^1.4.2", extras = ["async"]}
-pytest-cover = {version = "^3.0.0", extras = ["pytest"]}
-pytest-randomly = {version = "^3.5.0", extras = ["pytest"]}
-pytest-xdist = {version = "^2.2.0", extras = ["pytest"]}
-pytest-sugar = {version = "^0.9.4", extras = ["pytest"]}
-pytest-instafail = {version = "^0.4.2", extras = ["pytest"]}
+pytest-inmanta-extensions = {version = "2020.5.1", extras = ["extension"]}
+asyncpg = {version = "0.21.0", extras = ["extension"]}
+click = {version = "7.1.2", extras = ["extension"]}
+pyformance = {version = "0.4", extras = ["extension"]}
+pytest-env = {version = "0.6.2", extras = ["extension", "pytest"]}
+pytest-postgresql = {version = "2.5.3", extras = ["extension"]}
+psycopg2 = {version = "2.8.6", extras = ["extension"]}
+tornado = {version = "6.1", extras = ["extension"]}
+pytest-inmanta = {version = "1.4.0", extras = ["module"]}
+tox = {version = "3.21.3", extras = ["module"]}
+tox-venv = {version = "0.4.0", extras = ["module"]}
+pytest-asyncio = {version = "0.14.0", extras = ["async"]}
+pytest-timeout = {version = "1.4.2", extras = ["async"]}
+pytest-cover = {version = "3.0.0", extras = ["pytest"]}
+pytest-randomly = {version = "3.5.0", extras = ["pytest"]}
+pytest-xdist = {version = "2.2.0", extras = ["pytest"]}
+pytest-sugar = {version = "0.9.4", extras = ["pytest"]}
+pytest-instafail = {version = "0.4.2", extras = ["pytest"]}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
