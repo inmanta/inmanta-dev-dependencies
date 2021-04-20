@@ -57,7 +57,7 @@ core = ["asyncpg", "pytest-env", "pytest-postgresql", "psycopg2", "tox", "tornad
 extension = ["pytest-inmanta-extensions", "asyncpg", "pytest-env", "pytest-postgresql", "psycopg2", "tox", "tornado"]
 async = ["pytest-asyncio", "pytest-timeout"]
 pytest = ["pytest-env", "pytest-cover", "pytest-randomly", "pytest-xdist", "pytest-sugar", "pytest-instafail", "pytest-sugar", "pytest-instafail"]
-sphinx = ["inmanta-sphinx", "sphinx-argparse", "sphinx-autodoc-annotation", "sphinx-rtd-theme", "sphinx-tabs", "sphinx", "sphinxcontrib-serializinghtml", "sphinxcontrib-redoc", "sphinx-click"]
+sphinx = ["inmanta-sphinx", "sphinx-argparse", "sphinx-autodoc-annotation", "sphinx-rtd-theme", "sphinx-tabs", "sphinx", "sphinxcontrib-serializinghtml", "sphinxcontrib-redoc", "sphinx-click", "recommonmark"]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
