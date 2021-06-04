@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "inmanta-dev-dependencies"
-version = "1.40.0"
+version = "1.41.0"
 description = "Package collecting all common dev dependencies of inmanta modules and extensions to synchronize dependency versions."
 authors = ["Inmanta <code@inmanta.com>"]
 license = "Apache-2.0"
