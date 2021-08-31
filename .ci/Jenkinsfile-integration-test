@@ -27,6 +27,7 @@ pipeline {
                             python3 -m venv ${WORKSPACE}/env
                             # First upgrade pip, then install other packages
                             ${WORKSPACE}/env/bin/python3 -m pip install -U pip
+                            # Version 1.1.8 is bad: https://github.com/python-poetry/poetry/issues/4416
                             ${WORKSPACE}/env/bin/python3 -m pip install -U poetry!=1.1.8
                         '''
                     }
