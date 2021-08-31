@@ -27,7 +27,7 @@ pipeline {
                             python3 -m venv ${WORKSPACE}/env
                             # First upgrade pip, then install other packages
                             ${WORKSPACE}/env/bin/python3 -m pip install -U pip
-                            ${WORKSPACE}/env/bin/python3 -m pip install -U poetry
+                            ${WORKSPACE}/env/bin/python3 -m pip install -U poetry!=1.1.8
                         '''
                     }
                 }
