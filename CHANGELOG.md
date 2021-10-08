@@ -1,3 +1,6 @@
+# v 1.60.0 (2021-10-08)
+Changes in this release:
+
 # v 1.59.0 (2021-10-01)
 Changes in this release:
 
