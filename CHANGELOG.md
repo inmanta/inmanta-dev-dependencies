@@ -1,3 +1,6 @@
+# v 1.72.0 (2021-12-24)
+Changes in this release:
+
 # v 1.71.0 (2021-12-17)
 Changes in this release:
 
