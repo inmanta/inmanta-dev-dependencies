@@ -1,3 +1,6 @@
+# v 1.76.0 (2022-01-21)
+Changes in this release:
+
 # v 1.75.0 (2022-01-14)
 Changes in this release:
 
