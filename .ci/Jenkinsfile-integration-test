@@ -23,8 +23,16 @@ pipeline {
                     checkout scm
                     script {
                         sh '''
+                            # Obtain python version
                             rm -rf ${WORKSPACE}/env
                             python3 -m venv ${WORKSPACE}/env
+                            ${WORKSPACE}/env/bin/pip install --pre irt
+                            python_version=$(${WORKSPACE}/env/bin/irt --file ./pyproject.toml --query "tool.poetry.dependencies.python"| sed 's/\^//g')
+                            python_binary="python${python_version}"
+
+                            # Setup venv for test
+                            rm -rf ${WORKSPACE}/env
+                            ${python_version} -m venv ${WORKSPACE}/env
                             # First upgrade pip, then install other packages
                             ${WORKSPACE}/env/bin/python3 -m pip install -U pip
                             # Version 1.1.8 is bad: https://github.com/python-poetry/poetry/issues/4416
