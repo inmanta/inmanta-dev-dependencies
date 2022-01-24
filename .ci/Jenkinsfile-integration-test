@@ -27,7 +27,7 @@ pipeline {
                             rm -rf ${WORKSPACE}/env
                             python3 -m venv ${WORKSPACE}/env
                             ${WORKSPACE}/env/bin/pip install --pre irt
-                            python_version=$(${WORKSPACE}/env/bin/irt --file ./pyproject.toml --query "tool.poetry.dependencies.python"| sed 's/\^//g')
+                            python_version=$(${WORKSPACE}/env/bin/irt --file ./pyproject.toml --query "tool.poetry.dependencies.python"| sed "s/\\^//g")
                             python_binary="python${python_version}"
 
                             # Setup venv for test
