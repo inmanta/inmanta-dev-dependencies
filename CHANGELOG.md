@@ -1,7 +1,7 @@
 # v 2.1.0 (?)
 Changes in this release:
 
-# v 2.0.0 (?)
+# v 2.0.0 (2022-01-25)
 Changes in this release:
 
 # v 1.76.0 (2022-01-21)
