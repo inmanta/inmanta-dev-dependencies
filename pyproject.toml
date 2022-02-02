@@ -10,7 +10,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.9"
-black = "21.12b0"
+black = "22.1.0"
 flake8 = "3.9.2"
 flake8-copyright = "0.2.2"
 flake8-black = "0.2.3"
