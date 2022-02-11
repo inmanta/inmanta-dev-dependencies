@@ -1,3 +1,6 @@
+# v 2.4.0 (2022-02-11)
+Changes in this release:
+
 # v 2.3.0 (2022-02-04)
 Changes in this release:
 
