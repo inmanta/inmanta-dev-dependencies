@@ -48,16 +48,12 @@ pipeline {
                 }
             }
             steps {
-                build(
-                    job: "/releases/python-packages/inmanta-dev-dependencies-pypi-release/master",
-                    parameters: [
-                        string(name: "release_type", value: "stable"),
-                        string(name: "version_increment", value: "minor"),
-                        booleanParam(name: "run_job", value: true),
-                        booleanParam(name: "upload", value: true),
-                        booleanParam(name: "auto_merge_version_bump", value: true),
-                    ]
-                )
+             dir("inmanta-dev-dependencies") {
+                sh'''
+                    echo "test branch"
+                    echo ${HAS_CHANGES}
+                '''
+                }
             }
         }
     }
