@@ -24,13 +24,13 @@ pipeline {
                     script {
                         status = sh(
                             returnStatus: true,
+                            // Ignore the change of the version of the inmanta-dev-dependencies package itself
                             script: '''
                                 git checkout master
-                                diff=$(git diff origin/latest -- pyproject.toml)
-                                [ -z "$diff" ]
+                                diff=$(git diff -U0  origin/latest -- pyproject.toml | grep '^[+-]' | grep -Ev '^(--- a/|\\+\\+\\+ b/)' | grep -Ev '^(\\+|-)version = "[0-9]+\\.[0-9]+\\.[0-9]+"$')
                             '''
                         )
-                        if (status) {
+                        if (!status) {
                             env.HAS_CHANGES = true
                         } else {
                             env.HAS_CHANGES = false
@@ -48,12 +48,16 @@ pipeline {
                 }
             }
             steps {
-             dir("inmanta-dev-dependencies") {
-                sh'''
-                    echo "test branch"
-                    echo ${HAS_CHANGES}
-                '''
-                }
+                build(
+                    job: "/releases/python-packages/inmanta-dev-dependencies-pypi-release/master",
+                    parameters: [
+                        string(name: "release_type", value: "stable"),
+                        string(name: "version_increment", value: "minor"),
+                        booleanParam(name: "run_job", value: true),
+                        booleanParam(name: "upload", value: true),
+                        booleanParam(name: "auto_merge_version_bump", value: true),
+                    ]
+                )
             }
         }
     }
