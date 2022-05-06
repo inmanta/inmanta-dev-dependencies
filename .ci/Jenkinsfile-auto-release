@@ -27,7 +27,7 @@ pipeline {
                             // Ignore the change of the version of the inmanta-dev-dependencies package itself
                             script: '''
                                 git checkout master
-                                diff=$(git diff -U0  origin/latest -- pyproject.toml | grep '^[+-]' | grep -Ev '^(--- a/|\\+\\+\\+ b/)' | grep -Ev '^(\\+|-)version = "[0-9]+\\.[0-9]+\\.[0-9]+"$')
+                                git diff -U0  origin/latest -- pyproject.toml | grep '^[+-]' | grep -Ev '^(--- a/|\\+\\+\\+ b/)' | grep -Ev '^(\\+|-)version = "[0-9]+\\.[0-9]+\\.[0-9]+"$'
                             '''
                         )
                         if (!status) {
