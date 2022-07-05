@@ -49,7 +49,7 @@ pipeline {
             steps {
                 dir(env.REPO_NAME) {
                     script {
-                        sh '${WORKSPACE}/env/bin/poetry install --extras "async extension module pytest sphinx"'
+                        sh '${WORKSPACE}/env/bin/poetry install --extras "async extension module pytest sphinx core"'
                     }
                 }
             }
