@@ -19,7 +19,7 @@ isort = "5.10.1"
 lxml = "4.9.1"
 mypy = "0.971"
 pytest = "7.1.2"
-pep8-naming = "0.13.1"
+pep8-naming = "0.13.2"
 
 # Optional dependencies
 pytest-inmanta-extensions = {version = "*", optional=true}
