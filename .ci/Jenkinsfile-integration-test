@@ -8,6 +8,8 @@ pipeline {
     environment {
         REPO_NAME="inmanta-dev-dependencies"
         PIP_INDEX_URL='https://artifacts.internal.inmanta.com/inmanta/dev'
+        // No prompts allowed
+        PYTHON_KEYRING_BACKEND="keyring.backends.null.Keyring"
     }
 
     options {
@@ -49,7 +51,7 @@ pipeline {
             steps {
                 dir(env.REPO_NAME) {
                     script {
-                        sh '${WORKSPACE}/env/bin/poetry install --extras "async extension module pytest sphinx core"'
+                        sh '${WORKSPACE}/env/bin/poetry install -n -v --extras "async extension module pytest sphinx core"'
                     }
                 }
             }
