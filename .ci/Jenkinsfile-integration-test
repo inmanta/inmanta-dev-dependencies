@@ -8,6 +8,8 @@ pipeline {
     environment {
         REPO_NAME="inmanta-dev-dependencies"
         PIP_INDEX_URL='https://artifacts.internal.inmanta.com/inmanta/dev'
+        # No prompts allowed
+        PYTHON_KEYRING_BACKEND="keyring.backends.null.Keyring"
     }
 
     options {
