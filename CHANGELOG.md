@@ -1,3 +1,6 @@
+# v 2.39.0 (2022-10-07)
+Changes in this release:
+
 # v 2.38.0 (2022-09-30)
 Changes in this release:
 
