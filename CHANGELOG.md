@@ -1,3 +1,6 @@
+# v 2.41.0 (2022-10-21)
+Changes in this release:
+
 # v 2.40.0 (2022-10-14)
 Changes in this release:
 
