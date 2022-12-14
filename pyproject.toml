@@ -28,7 +28,6 @@ pytest-env = {version = "0.8.1", optional=true}
 pytest-postgresql = {version = "4.1.1", optional=true}
 psycopg = {version = "3.1.5", optional=true}
 pytest-inmanta = {version = "*", optional=true}
-tox = {version = "4.0.9", optional=true}
 pytest-asyncio = {version = "0.20.3", optional=true}
 pytest-timeout = {version = "2.1.0", optional=true}
 pytest-cover = {version = "3.0.0", optional=true}
@@ -54,8 +53,8 @@ tornado = {version = "^6.1", optional=true}
 
 [tool.poetry.extras]
 module = ["pytest-inmanta"]
-core = ["asyncpg", "pytest-env", "pytest-postgresql", "psycopg2", "tox", "tornado"]
-extension = ["pytest-inmanta-extensions", "asyncpg", "pytest-env", "pytest-postgresql", "psycopg2", "tox", "tornado"]
+core = ["asyncpg", "pytest-env", "pytest-postgresql", "psycopg2", "tornado"]
+extension = ["pytest-inmanta-extensions", "asyncpg", "pytest-env", "pytest-postgresql", "psycopg2", "tornado"]
 async = ["pytest-asyncio", "pytest-timeout"]
 pytest = ["pytest-env", "pytest-cover", "pytest-randomly", "pytest-xdist", "pytest-sugar", "pytest-instafail", "pytest-sugar", "pytest-instafail"]
 sphinx = [
