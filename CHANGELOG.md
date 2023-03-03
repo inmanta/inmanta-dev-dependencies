@@ -1,3 +1,6 @@
+# v 2.60.0 (2023-03-03)
+Changes in this release:
+
 # v 2.59.0 (2023-02-24)
 Changes in this release:
 
