@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "inmanta-dev-dependencies"
-version = "2.64.0"
+version = "2.65.0"
 description = "Package collecting all common dev dependencies of inmanta modules and extensions to synchronize dependency versions."
 authors = ["Inmanta <code@inmanta.com>"]
 license = "Apache-2.0"
@@ -10,7 +10,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.9"
-black = "23.1.0"
+black = "23.3.0"
 flake8 = "6.0.0"
 flake8-copyright = "0.2.4"
 flake8-black = "0.3.6"
