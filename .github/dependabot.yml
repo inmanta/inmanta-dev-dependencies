@@ -6,7 +6,3 @@ updates:
   schedule:
     interval: daily
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: "Sphinx"
-    # conflicts with a dependency of core, tracked in inmanta/infra-tickets#121
-    versions: [">=6"]
