@@ -6,3 +6,7 @@ updates:
   schedule:
     interval: daily
   open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "Sphinx"
+    # conflicts with sphinx-design and waiting on: https://github.com/executablebooks/sphinx-design/pull/131
+    versions: [">=7"]
