@@ -29,39 +29,44 @@ dependencies = [
 packages = { find = { include = ["inmanta_dev_dependencies*"], where = ["src"] } }
 
 # Optional dependencies
-pytest-inmanta-extensions = {version = "*", optional=true}
-pytest-env = {version = "0.8.2", optional=true}
-pytest-postgresql = {version = "5.0.0", optional=true}
-psycopg = {version = "3.1.9", optional=true}
-pytest-inmanta = {version = "*", optional=true}
-pytest-asyncio = {version = "0.21.0", optional=true}
-pytest-timeout = {version = "2.1.0", optional=true}
-pytest-cover = {version = "3.0.0", optional=true}
-pytest-randomly = {version = "3.12.0", optional=true}
-pytest-xdist = {version = "3.3.1", optional=true}
-pytest-sugar = {version = "0.9.7", optional=true}
-pytest-instafail = {version = "0.5.0", optional=true}
-inmanta-sphinx = {version = "1.7.0", optional = true}
-sphinx-argparse = {version = "0.4.0", optional = true}
-sphinx-autodoc-annotation = {version = "1.0-1", optional = true}
-Sphinx = {version = "6.2.1", optional = true}
-sphinxcontrib-serializinghtml = {version = "1.1.5", optional = true}
-sphinxcontrib-redoc = {version = "1.6.0", optional = true}
-sphinx-click = {version = "4.4.0", optional = true}
-myst_parser = {version = "2.0.0", optional = true}
-
-# These are test and direct dependencies of certain extensions. We use carret version
-# constraints so that updates are possible.
-asyncpg = {version = ">=0.21.0,<1.0.0", optional=true}
-tornado = {version = "^6.1", optional=true}
-
 [project.optional-dependencies]
 module = ["pytest-inmanta"]
-core = ["asyncpg", "pytest-env", "pytest-postgresql", "psycopg2", "tornado"]
-extension = ["pytest-inmanta-extensions", "asyncpg", "pytest-env", "pytest-postgresql", "psycopg2", "tornado"]
-async = ["pytest-asyncio", "pytest-timeout"]
-pytest = ["pytest-env", "pytest-cover", "pytest-randomly", "pytest-xdist", "pytest-sugar", "pytest-instafail", "pytest-sugar", "pytest-instafail"]
+core = [
+    "asyncpg>=0.21.0,<1.0.0",
+    "pytest-env==0.8.2",
+    "pytest-postgresql==5.0.0",
+    "psycopg2==3.1.9",
+    "tornado==6.1"
+]
+extension = [
+    "pytest-inmanta-extensions==*",
+    "asyncpg>=0.21.0,<1.0.0",
+    "pytest-env==0.8.2",
+    "pytest-postgresql==5.0.0",
+    "psycopg2==3.1.9",
+    "tornado==6.1"
+]
+async = [
+    "pytest-asyncio==0.21.0",
+    "pytest-timeout==2.1.0"
+]
+pytest = [
+    "pytest-env==0.8.2",
+    "pytest-cover==3.0.0",
+    "pytest-randomly==3.12.0",
+    "pytest-xdist==3.3.1",
+    "pytest-sugar==0.9.7",
+    "pytest-instafail==0.5.0"
+]
 sphinx = [
-    "inmanta-sphinx", "sphinx-argparse", "sphinx-autodoc-annotation", "sphinx-tabs", "sphinx", "sphinxcontrib-serializinghtml",
-    "sphinxcontrib-redoc", "sphinx-click", "recommonmark", "myst_parser"
+    "inmanta-sphinx==1.7.0",
+    "sphinx-argparse==0.4.0",
+    "sphinx-autodoc-annotation==1.0-1",
+    "sphinx-tabs==*",
+    "sphinx==6.2.1",
+    "sphinxcontrib-serializinghtml==1.1.5",
+    "sphinxcontrib-redoc==1.6.0",
+    "sphinx-click==4.4.0",
+    "recommonmark==*",
+    "myst_parser==2.0.0"
 ]
