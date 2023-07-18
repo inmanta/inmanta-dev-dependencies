@@ -39,7 +39,7 @@ core = [
     "tornado==6.1"
 ]
 extension = [
-    "pytest-inmanta-extensions==*",
+    "pytest-inmanta-extensions",
     "asyncpg>=0.21.0,<1.0.0",
     "pytest-env==0.8.2",
     "pytest-postgresql==5.0.0",
@@ -62,11 +62,11 @@ sphinx = [
     "inmanta-sphinx==1.7.0",
     "sphinx-argparse==0.4.0",
     "sphinx-autodoc-annotation==1.0-1",
-    "sphinx-tabs==*",
+    "sphinx-tabs",
     "sphinx==6.2.1",
     "sphinxcontrib-serializinghtml==1.1.5",
     "sphinxcontrib-redoc==1.6.0",
     "sphinx-click==4.4.0",
-    "recommonmark==*",
+    "recommonmark",
     "myst_parser==2.0.0"
 ]
