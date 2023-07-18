@@ -41,7 +41,7 @@ pipeline {
             steps {
                 dir(env.REPO_NAME) {
                     script {
-                        sh '${WORKSPACE}/env/bin/pip install -e .[async,extension,module,pytest,sphinx,core] -i https://artifacts.internal.inmanta.com/inmanta/dev'
+                        sh '${WORKSPACE}"/env/bin/pip install -e .[async,extension,module,pytest,sphinx,core] -i https://artifacts.internal.inmanta.com/inmanta/dev'
                     }
                 }
             }
