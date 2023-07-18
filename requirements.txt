@@ -1,0 +1,25 @@
+pytest-inmanta-extensions
+pytest-env==0.8.2
+pytest-postgresql==5.0.0
+psycopg==3.1.9
+pytest-inmanta
+pytest-asyncio==0.21.0
+pytest-timeout==2.1.0
+pytest-cover==3.0.0
+pytest-randomly==3.12.0
+pytest-xdist==3.3.1
+pytest-sugar==0.9.7
+pytest-instafail==0.5.0
+inmanta-sphinx==1.7.0
+sphinx-argparse==0.4.0
+sphinx-autodoc-annotation==1.0-1
+Sphinx==6.2.1
+sphinxcontrib-serializinghtml==1.1.5
+sphinxcontrib-redoc==1.6.0
+sphinx-click==4.4.0
+myst_parser==2.0.0
+
+# These are test and direct dependencies of certain extensions. We use carret version
+# constraints so that updates are possible.
+asyncpg==0.21.0,<1.0.0
+tornado==^6.1
