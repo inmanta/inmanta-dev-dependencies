@@ -10,8 +10,6 @@ description = "Package collecting all common dev dependencies of inmanta modules
 authors = [
     {name = "Inmanta", email = "code@inmanta.com"},
 ]
-license = "Apache-2.0"
-
 
 dependencies = [
     "black==23.3.0",
