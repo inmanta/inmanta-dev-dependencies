@@ -33,7 +33,6 @@ pipeline {
                             ${WORKSPACE}/env/bin/pip install --pre irt
                             python_version=$(${WORKSPACE}/env/bin/irt query-toml-file --file ./pyproject.toml --query "project.requires-python"| sed "s/>=//g")
                             python_binary="python${python_version}"
-                            echo ${python_binary}
                             # Setup venv for test
                             rm -rf ${WORKSPACE}/env
                             ${python_binary} -m venv ${WORKSPACE}/env
