@@ -53,7 +53,7 @@ async = [
 pytest = [
     "pytest-env==0.8.2",
     "pytest-cover==3.0.0",
-    "pytest-randomly==3.12.0",
+    "pytest-randomly==3.13.0",
     "pytest-xdist==3.3.1",
     "pytest-sugar==0.9.7",
     "pytest-instafail==0.5.0"
