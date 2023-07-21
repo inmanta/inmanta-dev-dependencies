@@ -1,6 +1,5 @@
 version: 2
 updates:
-# poetry is part of the pip ecosystem
 - package-ecosystem: pip
   directory: "/"
   schedule:
