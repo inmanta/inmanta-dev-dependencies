@@ -49,7 +49,7 @@ pipeline {
             steps {
                 dir(env.REPO_NAME) {
                     script {
-                        sh '${WORKSPACE}/env/bin/pip install -e .[async,extension,module,pytest,sphinx,core]'
+                        sh '${WORKSPACE}/env/bin/pip install -e .[async,extension,module,pytest,core]'
                     }
                 }
             }

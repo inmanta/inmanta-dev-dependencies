@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "inmanta-dev-dependencies"
-version = "2.77.0"
+version = "2.78.0"
 requires-python = ">=3.9"
 description = "Package collecting all common dev dependencies of inmanta modules and extensions to synchronize dependency versions."
 authors = [
@@ -57,16 +57,4 @@ pytest = [
     "pytest-xdist==3.3.1",
     "pytest-sugar==0.9.7",
     "pytest-instafail==0.5.0"
-]
-sphinx = [
-    "inmanta-sphinx==1.7.0",
-    "sphinx-argparse==0.4.0",
-    "sphinx-autodoc-annotation==1.0-1",
-    "sphinx-tabs",
-    "sphinx==6.2.1",
-    "sphinxcontrib-serializinghtml==1.1.5",
-    "sphinxcontrib-redoc==1.6.0",
-    "sphinx-click==4.4.0",
-    "recommonmark",
-    "myst_parser==2.0.0"
 ]
