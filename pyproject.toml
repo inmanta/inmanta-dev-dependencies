@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "inmanta-dev-dependencies"
-version = "2.79.0"
+version = "2.80.0"
 requires-python = ">=3.9"
 description = "Package collecting all common dev dependencies of inmanta modules and extensions to synchronize dependency versions."
 authors = [
@@ -19,7 +19,7 @@ dependencies = [
     "flake8-isort==6.0.0",
     "isort==5.12.0",
     "lxml==4.9.3",
-    "mypy==1.4.1",
+    "mypy==1.5.0",
     "pytest==7.4.0",
     "pep8-naming==0.13.3",
     "pyadr==0.19.0",
@@ -35,7 +35,7 @@ core = [
     "asyncpg>=0.21.0,<1.0.0",
     "pytest-env==0.8.2",
     "pytest-postgresql==5.0.0",
-    "psycopg==3.1.9",
+    "psycopg==3.1.10",
     "tornado>=6.1,<7.0"
 ]
 extension = [
@@ -43,7 +43,7 @@ extension = [
     "asyncpg>=0.21.0,<1.0.0",
     "pytest-env==0.8.2",
     "pytest-postgresql==5.0.0",
-    "psycopg==3.1.9",
+    "psycopg==3.1.10",
     "tornado>=6.1,<7.0"
 ]
 async = [
