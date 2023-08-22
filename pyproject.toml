@@ -33,7 +33,7 @@ packages = { find = { include = ["inmanta_dev_dependencies*"], where = ["src"] }
 module = ["pytest-inmanta"]
 core = [
     "asyncpg>=0.21.0,<1.0.0",
-    "pytest-env==0.8.2",
+    "pytest-env==1.0.0",
     "pytest-postgresql==5.0.0",
     "psycopg==3.1.10",
     "tornado>=6.1,<7.0"
@@ -41,7 +41,7 @@ core = [
 extension = [
     "pytest-inmanta-extensions",
     "asyncpg>=0.21.0,<1.0.0",
-    "pytest-env==0.8.2",
+    "pytest-env==1.0.0",
     "pytest-postgresql==5.0.0",
     "psycopg==3.1.10",
     "tornado>=6.1,<7.0"
@@ -51,7 +51,7 @@ async = [
     "pytest-timeout==2.1.0"
 ]
 pytest = [
-    "pytest-env==0.8.2",
+    "pytest-env==1.0.0",
     "pytest-cover==3.0.0",
     "pytest-randomly==3.15.0",
     "pytest-xdist==3.3.1",
