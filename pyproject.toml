@@ -39,7 +39,10 @@ core = [
     "tornado>=6.1,<7.0"
 ]
 extension = [
-    "pytest-inmanta-extensions",
+    # depend on inmanta-core with the extra rather than plain pytest-inmanta-extensions to aid pip in finding candidate
+    # versions if constraints on inmanta-core are added externally (e.g. via inmanta-service-orchestrator)
+    # (see https://github.com/inmanta/infra-tickets/issues/180#issuecomment-1715587389)
+    "inmanta-core[pytest-inmanta-extensions]",
     "asyncpg>=0.21.0,<1.0.0",
     "pytest-env==1.0.1",
     "pytest-postgresql==5.0.0",
