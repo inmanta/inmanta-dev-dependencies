@@ -50,7 +50,7 @@ extension = [
     "tornado>=6.1,<7.0"
 ]
 async = [
-    "pytest-asyncio==0.21.1",
+    "pytest-asyncio==0.23.2",
     "pytest-timeout==2.2.0"
 ]
 pytest = [
