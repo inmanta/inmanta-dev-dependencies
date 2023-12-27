@@ -1,3 +1,6 @@
+# v 2.100.0 (2023-12-27)
+Changes in this release:
+
 # v 2.99.0 (2023-12-22)
 Changes in this release:
 

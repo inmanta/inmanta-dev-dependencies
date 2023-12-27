@@ -8,4 +8,4 @@ updates:
   ignore:
   - dependency-name: "pytest-asyncio"
     # https://github.com/pytest-dev/pytest-asyncio/issues/713
-    versions: ["==0.23.2"]
+    versions: ["0.23.1", "0.23.2"]
