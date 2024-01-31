@@ -5,7 +5,3 @@ updates:
   schedule:
     interval: daily
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: "pytest-asyncio"
-    # https://github.com/pytest-dev/pytest-asyncio/issues/713
-    versions: ["0.23.0","0.23.1", "0.23.2", "0.23.3"]
