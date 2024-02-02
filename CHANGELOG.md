@@ -1,3 +1,6 @@
+# v 2.106.0 (2024-02-02)
+Changes in this release:
+
 # v 2.105.0 (2024-01-31)
 Changes in this release:
 
