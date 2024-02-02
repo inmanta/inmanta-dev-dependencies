@@ -5,3 +5,8 @@ updates:
   schedule:
     interval: daily
   open-pull-requests-limit: 10
+  ignore:
+    # pytest-asyncio doens't support pytest 8.0 yet: https://github.com/pytest-dev/pytest-asyncio/issues/737
+    # This can be removed once it does.
+    - dependency-name: "pytest"
+      update-types: ["version-update:semver-major"]
