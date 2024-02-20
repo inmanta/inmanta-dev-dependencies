@@ -5,3 +5,8 @@ updates:
   schedule:
     interval: daily
   open-pull-requests-limit: 10
+  ignore:
+    # Migrating to pytest 8 requires the fix https://github.com/inmanta/inmanta-core/commit/b68bfccf1cc02dfb7b5b60b7d44520997949ea8f
+    # to be present in a stable release. This ignore can be removed after the next major release.
+    - dependency-name: "pytest"
+      update-types: ["version-update:semver-major"]
