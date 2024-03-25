@@ -22,7 +22,7 @@ dependencies = [
     "mypy==1.9.0",
     "pep8-naming==0.13.3",
     "pytest==7.4.4",
-    "pyupgrade==3.15.1",
+    "pyupgrade==3.15.2",
     "mypy-baseline==0.6.1",
 ]
 
