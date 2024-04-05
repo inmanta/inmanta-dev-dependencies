@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "inmanta-dev-dependencies"
-version = "2.114.0"
+version = "2.115.0"
 requires-python = ">=3.9"
 description = "Package collecting all common dev dependencies of inmanta modules and extensions to synchronize dependency versions."
 authors = [
@@ -18,7 +18,7 @@ dependencies = [
     "flake8-black==0.3.6",
     "flake8-isort==6.1.1",
     "isort==5.13.2",
-    "lxml==5.1.0",
+    "lxml==5.2.1",
     "mypy==1.9.0",
     "pep8-naming==0.13.3",
     "pytest==7.4.4",
