@@ -12,7 +12,7 @@ authors = [
 ]
 
 dependencies = [
-    "black==24.4.1",
+    "black==24.4.2",
     "flake8==7.0.0",
     "flake8-copyright==0.2.4",
     "flake8-black==0.3.6",
