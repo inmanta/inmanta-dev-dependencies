@@ -20,7 +20,7 @@ dependencies = [
     "isort==5.13.2",
     "lxml==5.2.2",
     "mypy==1.10.0",
-    "pep8-naming==0.13.3",
+    "pep8-naming==0.14.0",
     "pytest==7.4.4",
     "pyupgrade==3.15.2",
     "mypy-baseline==0.7.1",
