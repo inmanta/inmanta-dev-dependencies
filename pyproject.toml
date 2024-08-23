@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "inmanta-dev-dependencies"
-version = "2.131.0"
+version = "2.132.0"
 requires-python = ">=3.9"
 description = "Package collecting all common dev dependencies of inmanta modules and extensions to synchronize dependency versions."
 authors = [
@@ -51,7 +51,7 @@ extension = [
     "tornado>=6.1,<7.0"
 ]
 async = [
-    "pytest-asyncio==0.23.8",
+    "pytest-asyncio==0.24.0",
     "pytest-timeout==2.3.1"
 ]
 pytest = [
