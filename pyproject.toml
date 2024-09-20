@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "inmanta-dev-dependencies"
-version = "2.135.0"
+version = "2.136.0"
 requires-python = ">=3.9"
 description = "Package collecting all common dev dependencies of inmanta modules and extensions to synchronize dependency versions."
 authors = [
@@ -34,9 +34,9 @@ packages = { find = { include = ["inmanta_dev_dependencies*"], where = ["src"] }
 module = ["pytest-inmanta"]
 core = [
     "asyncpg>=0.21.0,<1.0.0",
-    "pytest-env==1.1.4",
+    "pytest-env==1.1.5",
     "pytest-postgresql==6.1.1",
-    "psycopg==3.2.1",
+    "psycopg==3.2.2",
     "tornado>=6.1,<7.0"
 ]
 extension = [
@@ -45,9 +45,9 @@ extension = [
     # (see https://github.com/inmanta/infra-tickets/issues/180#issuecomment-1715587389)
     "inmanta-core[pytest-inmanta-extensions]",
     "asyncpg>=0.21.0,<1.0.0",
-    "pytest-env==1.1.4",
+    "pytest-env==1.1.5",
     "pytest-postgresql==6.1.1",
-    "psycopg==3.2.1",
+    "psycopg==3.2.2",
     "tornado>=6.1,<7.0"
 ]
 async = [
@@ -55,7 +55,7 @@ async = [
     "pytest-timeout==2.3.1"
 ]
 pytest = [
-    "pytest-env==1.1.4",
+    "pytest-env==1.1.5",
     "pytest-cover==3.0.0",
     "pytest-randomly==3.15.0",
     "pytest-sugar==1.0.0",
