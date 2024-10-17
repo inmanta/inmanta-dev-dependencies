@@ -23,7 +23,7 @@ dependencies = [
     "pep8-naming==0.14.1",
     "pytest==8.3.3",
     "pyupgrade==3.18.0",
-    "mypy-baseline==0.7.1",
+    "mypy-baseline==0.7.2",
 ]
 
 [tool.setuptools]
