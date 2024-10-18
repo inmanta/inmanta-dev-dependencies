@@ -1,3 +1,6 @@
+# v 2.139.0 (2024-10-18)
+Changes in this release:
+
 # v 2.138.0 (2024-10-11)
 Changes in this release:
 
