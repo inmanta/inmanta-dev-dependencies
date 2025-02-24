@@ -35,7 +35,7 @@ module = ["pytest-inmanta"]
 core = [
     "asyncpg>=0.21.0,<1.0.0",
     "pytest-env==1.1.5",
-    "pytest-postgresql==6.1.1",
+    "pytest-postgresql==7.0.0",
     "psycopg==3.2.5",
     "tornado>=6.1,<7.0"
 ]
@@ -46,7 +46,7 @@ extension = [
     "inmanta-core[pytest-inmanta-extensions]",
     "asyncpg>=0.21.0,<1.0.0",
     "pytest-env==1.1.5",
-    "pytest-postgresql==6.1.1",
+    "pytest-postgresql==7.0.0",
     "psycopg==3.2.5",
     "tornado>=6.1,<7.0"
 ]
