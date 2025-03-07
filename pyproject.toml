@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "inmanta-dev-dependencies"
-version = "2.152.0"
+version = "2.153.0"
 requires-python = ">=3.9"
 description = "Package collecting all common dev dependencies of inmanta modules and extensions to synchronize dependency versions."
 authors = [
@@ -21,7 +21,7 @@ dependencies = [
     "lxml==5.3.1",
     "mypy==1.15.0",
     "pep8-naming==0.14.1",
-    "pytest==8.3.4",
+    "pytest==8.3.5",
     "pyupgrade==3.19.1",
     "mypy-baseline==0.7.2",
 ]
