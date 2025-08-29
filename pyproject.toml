@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "inmanta-dev-dependencies"
-version = "2.174.0"
+version = "2.175.0"
 requires-python = ">=3.9"
 description = "Package collecting all common dev dependencies of inmanta modules and extensions to synchronize dependency versions."
 authors = [
@@ -59,6 +59,6 @@ pytest = [
     "pytest-env==1.1.5",
     "pytest-cover==3.0.0",
     "pytest-randomly==3.16.0",
-    "pytest-sugar==1.1.0",
+    "pytest-sugar==1.1.1",
     "pytest-instafail==0.5.0"
 ]
