@@ -1,3 +1,6 @@
+# v 2.177.0 (2025-09-12)
+Changes in this release:
+
 # v 2.176.0 (2025-09-05)
 Changes in this release:
 
