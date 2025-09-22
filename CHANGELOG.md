@@ -1,3 +1,6 @@
+# v 2.179.0 (2025-09-22)
+Changes in this release:
+
 # v 2.178.0 (2025-09-19)
 Changes in this release:
 
