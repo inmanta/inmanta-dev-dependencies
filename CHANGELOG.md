@@ -1,3 +1,6 @@
+# v 2.188.0 (2026-01-09)
+Changes in this release:
+
 # v 2.187.0 (2025-12-19)
 Changes in this release:
 
