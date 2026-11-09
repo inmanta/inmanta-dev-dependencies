@@ -37,7 +37,7 @@ core = [
     "asyncpg>=0.21.0,<1.0.0",
     "pytest-env==1.8.4",
     "pytest-postgresql==10.0.0",
-    "psycopg==3.3.7",
+    "psycopg==3.3.8",
     "tornado>=6.1,<7.0"
 ]
 extension = [
@@ -48,7 +48,7 @@ extension = [
     "asyncpg>=0.21.0,<1.0.0",
     "pytest-env==1.8.4",
     "pytest-postgresql==10.0.0",
-    "psycopg==3.3.7",
+    "psycopg==3.3.8",
     "tornado>=6.1,<7.0"
 ]
 async = [
